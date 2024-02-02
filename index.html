@@ -20,7 +20,7 @@
 
     <script>
         function pobierzCzas() {
-            fetch('http://worldtimeapi.org/api/timezone/Europe/London')
+            fetch('http://worldtimeapi.org/api/ip')
                 .then(response => response.json())
                 .then(data => {
                     var czas = new Date(data.utc_datetime);
